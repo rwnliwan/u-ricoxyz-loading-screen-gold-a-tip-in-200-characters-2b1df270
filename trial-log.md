@@ -23,3 +23,12 @@ Angle: the loading bar as theatre — the agent finished long ago, the bar keeps
 ## Build history
 
 - v1 (24 Nov ~22:1x WITA): first files written in this session (main.ts + trial-log.md + README.md with 3 live make.fun badges + LICENSE). Repo `.git` existed from the first builder attempt (git init 21:56, output flagged — verified from disk, not trusted from output); branch `main`, no commits yet, identity rwnliwan <rwnliwan@gmail.com>.
+
+## Verification (percobaan ke-3, 24 Nov ~22:14–22:15 WITA)
+
+- Push attempt-2 kena flag (execution-risk) — status TIDAK disimpulkan dari output itu. Verifikasi independen: `git ls-remote origin HEAD` = `a5b4119bc1bf1cf79bee24354ae47575a591d8e0` = HEAD lokal → push SUDAH masuk, tanpa push ulang (pola ke-4: six-prog #6, trio #1, trio #3).
+- About repo di-set: homepage https://make.fun/bounty/u-ricoxyz-loading-screen-gold-a-tip-in-200-characters-2b1df270 + topics ["makefun"] (PUT, terverifikasi via `gh api`).
+- Repo GitHub: publik, dibuat 2026-11-24T14:12:16Z (sesudah opening 13:24:18Z), default branch `main`.
+- Bundle v1: `u-ricoxyz-loading-screen-gold-a-tip-in-200-characters-2b1df270-bundle-v1.tar.gz`, 245.313 B, sha256 `4e2a12e58a3cf9c8215c6e335c7ebc8638f838155a7d8b0c31fb273712c1116b` — 2 sesi (09ae3fc6 + 7bb00be3), 2 usage rows ter-attach, prompt-file prompt-3.txt (origin other).
+- Check v1: **13 passed, 1 failed, 5 skipped** — gagal hanya `thinking_revised` (semua file ditulis sekali). Fix: revisi trial-log ini dengan hasil bundle/check nyata, re-commit, re-bundle, re-check.
+- `node main.ts` lokal: /output/entry.txt 87 byte, teks tepat 87 karakter, satu baris.
